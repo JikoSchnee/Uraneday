@@ -1,4 +1,12 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import ElementPlus from 'element-plus';
+import 'element-plus/dist/index.css';
 
-createApp(App).mount('#app')
+
+const app = createApp(App);
+
+// 使用 Element Plus 插件
+app.use(ElementPlus);
+
+app.mount('#app');

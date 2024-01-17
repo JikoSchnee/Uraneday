@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--    <CardElementPlus></CardElementPlus>-->
+    <CardPlain></CardPlain>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import CardElementPlus from "@/components/ForAllComponents/CardElementPlus.vue";
+import CardPlain from "@/components/ForAllComponents/CardPlain.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    components: {
+        // CardElementPlus,
+        CardPlain
+    },
 }
-</script>
 
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
