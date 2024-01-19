@@ -1,24 +1,14 @@
+<!-- App.vue -->
+
 <template>
-<!--    <CardElementPlus></CardElementPlus>-->
-    <CardPlain></CardPlain>
-    <product-card></product-card>
+    <div id="app">
+        <h1>App</h1>
+        <router-view></router-view>
+    </div>
 </template>
 
-
 <script>
-// import CardElementPlus from "@/components/ForAllComponents/CardElementPlus.vue";
-import CardPlain from "@/components/ForAllComponents/Card/CardPlain.vue";
-import ProductCard from "@/components/ForAllComponents/ProductCard.vue";
-
 export default {
-    components: {
-        ProductCard,
-        // CardElementPlus,
-        CardPlain
-    },
-}
-
+    name: 'App'
+};
 </script>
-<style>
-
-</style>
