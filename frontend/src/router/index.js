@@ -2,14 +2,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 // 导入你的组件
-import Home from '../views/HomeTest.vue';
-import About from '../views/AboutTest.vue';
-import Contact from '../views/ContactTest.vue';
+import Home from '../views/Home/HomePage.vue';
+import Entry from '../views/Entry/EntryForAll.vue'
+import Home_NewYear from '../views/HappyNewYear/HomePage_NewYear.vue'
 
 const routes = [
-    { path: '/', name: 'home', component: Home },
-    { path: '/about', name: 'about', component: About },
-    { path: '/contact', name: 'contact', component: Contact },
+    { path: '/', name: 'entry', component: Entry},
+    { path: '/home', name: 'home', component: Home },
+    { path: '/newYear', name: 'newYearHome', component: Home_NewYear}
     // 如果需要，可以添加更多路由
 ];
 
